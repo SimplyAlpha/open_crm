@@ -18,7 +18,7 @@
 
 .button-primary {
   background: var(--accent);
-  color: white;
+  color: var(--accent-foreground);
 }
 
 .button-primary:hover {
@@ -32,7 +32,7 @@
 }
 
 .button-secondary:hover {
-  background: #eef2ff;
+  background: var(--surface-muted);
 }
 
 .button-ghost {
@@ -120,7 +120,7 @@
 }
 
 .text-input:focus {
-  outline: 2px solid rgba(39, 94, 254, 0.2);
+  outline: 2px solid rgba(255, 138, 42, 0.25);
   outline-offset: 1px;
   border-color: var(--accent);
 }
@@ -189,9 +189,9 @@
 .inline-note {
   margin: 0;
   padding: var(--space-3);
-  border: 1px solid rgba(39, 94, 254, 0.16);
+  border: 1px solid rgba(255, 138, 42, 0.28);
   border-radius: var(--radius-md);
-  background: rgba(39, 94, 254, 0.06);
+  background: #2a1b13;
   color: var(--text-strong);
 }
 
@@ -400,7 +400,7 @@
   display: grid;
   place-items: center;
   border-radius: 999px;
-  background: rgba(39, 94, 254, 0.1);
+  background: #2a1b13;
   color: var(--accent);
   font-weight: 800;
 }
@@ -472,7 +472,7 @@
   justify-self: end;
   padding: 0.35rem 0.65rem;
   border-radius: 999px;
-  background: rgba(39, 94, 254, 0.08);
+  background: #2a1b13;
   color: var(--accent-strong);
   font-size: 0.78rem;
   font-weight: 800;
@@ -558,7 +558,7 @@
 
 .record-row-active {
   border-color: var(--accent);
-  background: rgba(39, 94, 254, 0.06);
+  background: #2a1b13;
 }
 
 .record-row-alert {
@@ -722,7 +722,7 @@
   display: inline-block;
   padding: 0.35rem 0.65rem;
   border-radius: 999px;
-  background: rgba(39, 94, 254, 0.08);
+  background: #2a1b13;
   color: var(--accent-strong);
   font-size: 0.78rem;
   font-weight: 800;

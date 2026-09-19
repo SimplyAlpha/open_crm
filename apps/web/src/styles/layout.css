@@ -2,6 +2,7 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 260px 1fr;
+  background: var(--bg);
 }
 
 .route-loading {
@@ -16,8 +17,9 @@
 
 .side-nav {
   padding: var(--space-5) var(--space-4);
-  background: #101828;
-  color: #eef4ff;
+  background: #12101a;
+  border-right: 1px solid var(--border-subtle);
+  color: var(--text);
   display: flex;
   flex-direction: column;
   gap: var(--space-5);
@@ -37,13 +39,13 @@
   padding: 0.9rem 1rem;
   min-height: 44px;
   border-radius: var(--radius-sm);
-  color: #c4d1ea;
+  color: var(--text-muted);
 }
 
 .side-nav-link.active,
 .side-nav-link:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
+  background: #252135;
+  color: var(--text);
 }
 
 .brand-mark {
@@ -52,7 +54,8 @@
   border-radius: 1rem;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, #4f8cff, #275efe);
+  background: var(--accent);
+  color: var(--accent-foreground);
   font-weight: 700;
 }
 
@@ -60,6 +63,7 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
+  background: var(--bg);
 }
 
 .app-header,
@@ -129,10 +133,13 @@
   display: grid;
   place-items: center;
   padding: var(--space-5);
+  background: #0b0910;
 }
 
 .auth-card {
   width: min(100%, 28rem);
+  padding: 2.5rem;
+  border-radius: 1rem;
 }
 
 .landing-page {
@@ -143,17 +150,18 @@
 }
 
 .landing-page-light {
-  background: linear-gradient(135deg, #f8fbff, #eef4ff);
+  background: #0b0910;
+  color: var(--text);
 }
 
 .landing-page-blue {
-  background: radial-gradient(circle at top left, rgba(79, 140, 255, 0.26), transparent 32%), #0b1736;
-  color: #f8fbff;
+  background: #0b0910;
+  color: var(--text);
 }
 
 .landing-page-dark {
-  background: #111827;
-  color: #f8fbff;
+  background: #0b0910;
+  color: var(--text);
 }
 
 .landing-page-panel {
@@ -176,6 +184,9 @@
 .landing-page-copy {
   display: grid;
   gap: var(--space-3);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
 .landing-page-copy h1 {
@@ -193,6 +204,7 @@
 .landing-page-form {
   background: var(--surface);
   color: var(--text);
+  border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
 
@@ -271,24 +283,24 @@
   border: 1px solid var(--border);
   border-radius: 1.5rem;
   background: var(--surface);
-  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.22);
+  box-shadow: var(--shadow);
 }
 
 .chat-widget-blue .chat-widget-card {
-  border-color: rgba(79, 140, 255, 0.35);
-  background: linear-gradient(180deg, #f8fbff, #eef4ff);
+  border-color: var(--border);
+  background: var(--surface);
 }
 
 .chat-widget-dark .chat-widget-card {
-  border-color: rgba(255, 255, 255, 0.16);
-  background: #101828;
-  color: #f8fbff;
+  border-color: var(--border);
+  background: var(--surface);
+  color: var(--text);
 }
 
 .chat-widget-dark .text-input {
-  background: #182230;
-  border-color: rgba(255, 255, 255, 0.16);
-  color: #f8fbff;
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
 }
 
 .chat-widget-header {
@@ -309,8 +321,8 @@
   place-items: center;
   flex-shrink: 0;
   border-radius: 1rem;
-  background: linear-gradient(135deg, #4f8cff, #275efe);
-  color: #fff;
+  background: var(--accent);
+  color: var(--accent-foreground);
   font-weight: 800;
 }
 
@@ -323,8 +335,8 @@
 }
 
 .chat-widget-dark .chat-bubble {
-  background: rgba(255, 255, 255, 0.08);
-  color: #f8fbff;
+  background: var(--surface-muted);
+  color: var(--text);
 }
 
 @media (max-width: 960px) {

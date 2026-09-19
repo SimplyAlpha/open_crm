@@ -9,7 +9,7 @@ html, body, #root {
 
 body {
   font-family: var(--font-sans);
-  background: linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+  background: var(--bg);
   color: var(--text);
 }
 
@@ -27,7 +27,7 @@ button, input, textarea, select {
   top: -100%;
   left: var(--space-3);
   background: var(--accent);
-  color: #fff;
+  color: var(--accent-foreground);
   padding: var(--space-2) var(--space-3);
   border-radius: var(--radius-sm);
   font-weight: 600;

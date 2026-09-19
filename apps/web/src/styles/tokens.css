@@ -1,13 +1,23 @@
 :root {
-  --bg: #f5f7fb;
-  --surface: #ffffff;
-  --surface-muted: #f9fbff;
-  --text: #152033;
-  --text-muted: #546477;
-  --border: #d9e1ec;
-  --accent: #275efe;
-  --accent-strong: #1745cc;
-  --shadow: 0 18px 40px rgba(19, 35, 66, 0.08);
+  /* Matches the Simply Alpha calendar sign-in surface. */
+  --bg: #0b0910;
+  --surface: #171521;
+  --surface-muted: #252135;
+  --text: #f6f1ff;
+  --text-strong: #f6f1ff;
+  --text-muted: #b9b2ca;
+  --border: #35344e;
+  --border-subtle: #29263a;
+  --accent: #ff8a2a;
+  --accent-strong: #ff9e4a;
+  --accent-foreground: #100b08;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+  /* Compatibility aliases used by a few existing components. */
+  --color-text: var(--text);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-primary: var(--accent);
+  --color-danger: #d64a5f;
   --radius-sm: 12px;
   --radius-md: 18px;
   --radius-lg: 24px;
