@@ -119,6 +119,9 @@ func main() {
 		PostmarkFromName:      env.EmailFromName,
 		PostmarkFromEmail:     env.PostmarkFromEmail,
 		PostmarkMessageStream: env.PostmarkMessageStream,
+		ResendAPIKey:          env.ResendAPIKey,
+		ResendFromName:        env.EmailFromName,
+		ResendFromEmail:       env.ResendFromEmail,
 	}), metrics)
 	emailService := moduleemail.NewService(emailProvider, env.WebBaseURL)
 	var notesService *modulenotes.Service

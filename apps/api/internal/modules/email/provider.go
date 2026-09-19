@@ -140,6 +140,11 @@ type ProviderConfig struct {
 	PostmarkFromName      string
 	PostmarkFromEmail     string
 	PostmarkMessageStream string
+
+	// Resend settings, used when Name is "resend".
+	ResendAPIKey    string
+	ResendFromName  string
+	ResendFromEmail string
 }
 
 // NewProvider selects an email provider from configuration. Empty or "fake"
@@ -152,6 +157,8 @@ func NewProvider(cfg ProviderConfig) Provider {
 		return NewFakeProvider(cfg.Logger)
 	case "postmark":
 		return NewPostmarkProviderWithName(cfg.PostmarkServerToken, cfg.PostmarkFromName, cfg.PostmarkFromEmail, cfg.PostmarkMessageStream, cfg.Logger)
+	case "resend":
+		return NewResendProvider(cfg.ResendAPIKey, cfg.ResendFromName, cfg.ResendFromEmail, cfg.Logger)
 	default:
 		return unconfiguredProvider{name: cfg.Name}
 	}

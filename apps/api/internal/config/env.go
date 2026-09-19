@@ -34,6 +34,8 @@ type Env struct {
 	PostmarkMessageStream      string
 	PostmarkWebhookUsername    string
 	PostmarkWebhookPassword    string
+	ResendAPIKey               string
+	ResendFromEmail            string
 	SequenceTenant24HourLimit  string
 	SequenceSender1HourLimit   string
 	CredentialEncryptionKey    string
@@ -111,6 +113,8 @@ func Load() Env {
 		PostmarkMessageStream:      os.Getenv("POSTMARK_MESSAGE_STREAM"),
 		PostmarkWebhookUsername:    os.Getenv("POSTMARK_WEBHOOK_USERNAME"),
 		PostmarkWebhookPassword:    os.Getenv("POSTMARK_WEBHOOK_PASSWORD"),
+		ResendAPIKey:               os.Getenv("RESEND_API_KEY"),
+		ResendFromEmail:            os.Getenv("RESEND_FROM_EMAIL"),
 		SequenceTenant24HourLimit:  sequenceTenant24HourLimit,
 		SequenceSender1HourLimit:   sequenceSender1HourLimit,
 		CredentialEncryptionKey:    os.Getenv("CREDENTIAL_ENCRYPTION_KEY"),
